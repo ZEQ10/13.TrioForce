@@ -3,22 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="1080px"
+    android:layout_height="2400px"
     android:background="@raw/bg"
     tools:context=".MainScreen">
 
     <LinearLayout
         android:id="@+id/layout_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="1042px"
+        android:layout_height="201px"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/bg_topbar"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -40,7 +39,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/baloo2_regular"
                 android:text="Chào bạn !!!"
-                android:textSize="18sp" />
+                android:textSize="50px" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,8 +52,8 @@
 
             <ImageView
                 android:id="@+id/DiemDanh"
-                android:layout_width="45dp"
-                android:layout_height="43dp"
+                android:layout_width="102px"
+                android:layout_height="102px"
                 android:layout_marginStart="5dp"
                 android:src="@raw/timetable" />
 
@@ -72,7 +71,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/baloo2_bold"
                 android:text="99999999"
-                android:textSize="15sp" />
+                android:textSize="40px" />
 
         </LinearLayout>
 
@@ -100,7 +99,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="500px"
             android:drawableTop="@raw/create"
             android:paddingTop="50dp"
             android:paddingBottom="30dp"
@@ -108,7 +107,7 @@
             android:paddingStart="15dp"
             android:text="Tạo câu đố"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="50px"
             android:fontFamily="@font/baloo2_regular"
             android:background="@drawable/bg_menubar" />
 
@@ -117,7 +116,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="500px"
             android:drawableTop="@raw/playnow"
             android:paddingTop="50dp"
             android:paddingBottom="30dp"
@@ -125,14 +124,14 @@
             android:paddingStart="20dp"
             android:text="Chơi ngay"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="50px"
             android:fontFamily="@font/baloo2_regular"
             android:background="@drawable/bg_menubar" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="500px"
             android:drawableTop="@raw/comingsoon"
             android:paddingTop="50dp"
             android:paddingBottom="30dp"
@@ -140,7 +139,7 @@
             android:paddingStart="17dp"
             android:text="Sắp ra mắt"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="50px"
             android:fontFamily="@font/baloo2_regular"
             android:background="@drawable/comingsoon_bg" />
 
@@ -160,10 +159,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:fontFamily="@font/baloo2_bold"
             android:text="Thể loại câu đố"
-            android:textSize="18sp" />
+            android:textSize="50px" />
 
         <TextView
             android:id="@+id/TatCaTheLoai"
@@ -171,14 +170,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:textColor="#FFC72E"
-            android:layout_marginStart="190dp"
+            android:layout_marginStart="150dp"
             android:fontFamily="@font/baloo2_bold"
             android:text="Tất cả >>"
-            android:textSize="18sp" />
+            android:textSize="50px" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/layout_4"
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -194,7 +193,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/TheThao"
-                android:layout_width="180dp"
+                android:layout_width="450px"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/bg_menubar"
@@ -205,11 +204,11 @@
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
                 android:textAllCaps="false"
-                android:textSize="20sp"/>
+                android:textSize="50px"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/KhoaHoc"
-                android:layout_width="180dp"
+                android:layout_width="450px"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_menubar"
                 android:drawableStart="@raw/science"
@@ -219,7 +218,7 @@
                 android:fontFamily="@font/baloo2_regular"
                 android:text="Khoa học"
                 android:textAllCaps="false"
-                android:textSize="20sp"/>
+                android:textSize="50px"/>
 
         </LinearLayout>
 
@@ -232,7 +231,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/VanHoc"
-                android:layout_width="180dp"
+                android:layout_width="450px"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/bg_menubar"
@@ -243,11 +242,11 @@
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
                 android:textAllCaps="false"
-                android:textSize="20sp"/>
+                android:textSize="50px"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/LichSu"
-                android:layout_width="180dp"
+                android:layout_width="450px"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_menubar"
                 android:drawableStart="@raw/history"
@@ -257,7 +256,7 @@
                 android:fontFamily="@font/baloo2_regular"
                 android:text="Lịch sử"
                 android:textAllCaps="false"
-                android:textSize="20sp"/>
+                android:textSize="50px"/>
 
         </LinearLayout>
 
@@ -268,9 +267,8 @@
         android:orientation="horizontal"
         android:padding="10dp"
         android:layout_marginTop="30dp"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="980px"
+        android:layout_height="460px"
         app:layout_constraintTop_toBottomOf="@+id/layout_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -279,31 +277,32 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo2_bold"
                 android:text="Câu đố hằng ngày"
-                android:textSize="25sp" />
+                android:textSize="70px" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chơi để nhận thêm xu"
-                android:textSize="18sp"
+                android:textSize="40px"
                 android:layout_gravity="center"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnChoiHangNgay"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="95px"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/btn_playdailyquiz"
                 android:textAllCaps="false"
-                android:textSize="20sp"
+                android:textSize="40px"
                 android:paddingStart="40dp"
                 android:paddingEnd="40dp"
                 android:fontFamily="@font/baloo2_regular"
@@ -312,8 +311,8 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="175dp"
-            android:layout_height="161dp"
+            android:layout_width="390px"
+            android:layout_height="411px"
             android:src="@raw/questionary" />
 
     </LinearLayout>
@@ -321,11 +320,11 @@
     <LinearLayout
         android:weightSum="4"
         android:id="@+id/menubar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="1015px"
+        android:layout_height="112px"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal"
         android:background="@drawable/bg_menubar"
         app:layout_constraintBottom_toBottomOf="parent"

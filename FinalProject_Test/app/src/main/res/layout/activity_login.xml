@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="1080px"
+    android:layout_height="2400px"
     android:background="@raw/bg"
     tools:context=".login_activity">
 
@@ -24,14 +24,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="595px"
+        android:layout_height="150px"
         android:layout_gravity="center"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/baloo2_bold"
         android:text="Đăng nhập"
-        android:textSize="40dp"
+        android:textSize="110px"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,31 +62,33 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edt_TenNguoiDung"
-            android:layout_width="match_parent"
+            android:layout_width="850px"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/edittext"
             android:drawableLeft="@raw/userr"
+            android:drawablePadding="10dp"
             android:ems="10"
-            android:drawablePadding="5dp"
-            android:hint="Tên người dùng"
             android:fontFamily="@font/baloo2_regular"
+            android:hint="Tên người dùng"
             android:inputType="text"
-            android:padding="20dp" />
+            android:padding="20dp"
+            android:textSize="40px" />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edt_MatKhau"
-            android:layout_width="match_parent"
+            android:layout_width="850px"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:drawablePadding="5dp"
+            android:drawablePadding="10dp"
             android:background="@drawable/edittext"
             android:drawableLeft="@raw/lock"
             android:ems="10"
             android:hint="Mật khẩu"
+            android:textSize="40px"
             android:fontFamily="@font/baloo2_regular"
             android:inputType="text"
             android:padding="20dp" />
@@ -109,7 +113,7 @@
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:text="Hiện mật khẩu"
-            android:textSize="18sp"
+            android:textSize="40px"
             android:fontFamily="@font/baloo2_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/layout_verti" />
@@ -123,7 +127,7 @@
             android:layout_weight="1"
             android:text="Quên mật khẩu?"
             android:textColor="#ef2222"
-            android:textSize="18sp"
+            android:textSize="40px"
             android:fontFamily="@font/baloo2_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/show_password" />
@@ -146,8 +150,8 @@
         android:text="Đăng nhập"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        android:fontFamily="@font/baloo2_bold"
+        android:textSize="70px"
+        android:fontFamily="@font/baloo2_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_verti2" />
@@ -157,7 +161,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="----------  Hoặc đăng nhập bằng  ----------"
-        android:textSize="18sp"
+        android:textSize="40px"
         android:textColor="@color/black"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/baloo2_regular"
@@ -206,7 +210,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="40px"
             android:textColor="@color/black"
             android:layout_marginEnd="8dp"
             android:fontFamily="@font/baloo2_regular"
@@ -215,7 +219,7 @@
             android:id="@+id/formDangKy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="40px"
             android:textStyle="bold"
             android:textColor="#ef2222"
             android:fontFamily="@font/baloo2_bold"
