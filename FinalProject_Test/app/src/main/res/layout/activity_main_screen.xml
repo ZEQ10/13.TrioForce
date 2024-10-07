@@ -50,10 +50,12 @@
             android:layout_marginStart="25dp"
             android:padding="10dp">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/DiemDanh"
                 android:layout_width="102px"
                 android:layout_height="102px"
+                android:scaleType="fitCenter"
+                android:background="?android:attr/selectableItemBackground"
                 android:layout_marginStart="5dp"
                 android:src="@raw/timetable" />
 
