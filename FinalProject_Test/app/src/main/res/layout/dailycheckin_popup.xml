@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/main"
-    android:background="@drawable/popup_dailyreward"
     android:layout_height="match_parent"
     tools:context=".dailycheckin_popup">
 
@@ -13,274 +12,301 @@
         android:layout_width="949px"
         android:layout_height="1250px"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="168dp"
         android:layout_marginEnd="30dp"
-        android:orientation="vertical"
         android:background="@drawable/bg_popup"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_around"
-            android:text="Điểm danh để nhận thêm xu"
-            android:layout_marginTop="50dp"
             android:layout_gravity="center"
-            android:textSize="50px"/>
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_around"
+            android:padding="10dp"
+            android:text="Điểm danh để nhận thêm xu"
+            android:textSize="50px" />
 
         <LinearLayout
-            android:layout_marginTop="15dp"
             android:id="@+id/child"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_marginStart="35dp"
-                android:orientation="horizontal"
                 android:id="@+id/layout_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/oneday"
-                    android:orientation="vertical"
-                    android:background="@drawable/checkindaily_bg"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkindaily_bg"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
                         android:text="Ngày 1"
-                        android:textSize="40px"
                         android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
+                        android:textSize="40px" />
+
                     <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="?android:attr/selectableItemBackground"
                         android:padding="5dp"
-                        android:src="@raw/coinn"/>
+                        android:src="@raw/coinn" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
                         android:text="10"
-                        android:textSize="40px"
                         android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
+                        android:textSize="40px" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/twoday"
-                    android:orientation="vertical"
-                    android:background="@drawable/checkindaily_bg"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:layout_marginStart="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/checkindaily_bg"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
                         android:text="Ngày 2"
-                        android:textSize="40px"
                         android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
+                        android:textSize="40px" />
+
                     <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="?android:attr/selectableItemBackground"
                         android:padding="5dp"
-                        android:src="@raw/coinn"/>
+                        android:src="@raw/coinn" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
                         android:text="10"
-                        android:textSize="40px"
                         android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
+                        android:textSize="40px" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/threeday"
-                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
                     android:background="@drawable/checkindaily_bg"
+                    android:orientation="vertical"
                     android:paddingStart="20dp"
+                    android:paddingTop="5dp"
                     android:paddingEnd="20dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:paddingBottom="5dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
                         android:text="Ngày 3"
-                        android:textSize="40px"
                         android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:padding="5dp"
-                        android:src="@raw/coinn"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="10"
-                        android:textSize="40px"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                </LinearLayout>
+                        android:textSize="40px" />
 
-        </LinearLayout>
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:src="@raw/coinn" />
 
-            <LinearLayout
-                android:layout_marginStart="35dp"
-                android:orientation="horizontal"
-                android:id="@+id/layout_3"
-                android:layout_marginTop="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:id="@+id/fourday"
-                    android:orientation="vertical"
-                    android:background="@drawable/checkindaily_bg"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="18dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Ngày 4"
-                        android:textSize="40px"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:padding="5dp"
-                        android:src="@raw/coinn"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
                         android:text="10"
-                        android:textSize="40px"
                         android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/fiveday"
-                    android:orientation="vertical"
-                    android:background="@drawable/checkindaily_bg"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="18dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Ngày 5"
-                        android:textSize="40px"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:padding="5dp"
-                        android:src="@raw/coinn"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="10"
-                        android:textSize="40px"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/sixday"
-                    android:orientation="vertical"
-                    android:background="@drawable/checkindaily_bg"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="22dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Ngày 6"
-                        android:textSize="40px"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
-                    <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:padding="5dp"
-                        android:src="@raw/coinn"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="10"
-                        android:textSize="40px"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/baloo2_bold"/>
+                        android:textSize="40px" />
                 </LinearLayout>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/fourday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkindaily_bg"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="Ngày 4"
+                        android:textAlignment="center"
+                        android:textSize="40px" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:src="@raw/coinn" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fiveday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/checkindaily_bg"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="Ngày 5"
+                        android:textAlignment="center"
+                        android:textSize="40px" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:src="@raw/coinn" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sixday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/checkindaily_bg"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="22dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="Ngày 6"
+                        android:textAlignment="center"
+                        android:textSize="40px" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:src="@raw/coinn" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/sevenday"
-                android:orientation="vertical"
-                android:background="@drawable/checkindaily_bg2"
-                android:paddingStart="20dp"
-                android:paddingEnd="22dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:layout_marginStart="36dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/checkindaily_bg2"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="22dp"
+                android:paddingBottom="5dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/baloo2_bold"
                     android:text="Ngày 7"
-                    android:textSize="40px"
                     android:textAlignment="center"
-                    android:fontFamily="@font/baloo2_bold"/>
+                    android:textSize="40px" />
+
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="5dp"
-                    android:src="@raw/coinn"/>
+                    android:src="@raw/coinn" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/baloo2_bold"
                     android:text="10"
-                    android:textSize="40px"
                     android:textAlignment="center"
-                    android:fontFamily="@font/baloo2_bold"/>
+                    android:textSize="40px" />
             </LinearLayout>
         </LinearLayout>
 
@@ -290,10 +316,10 @@
         android:id="@+id/imageView2"
         android:layout_width="376dp"
         android:layout_height="228dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="52dp"
         android:src="@raw/banner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -301,26 +327,27 @@
         android:id="@+id/Thoat"
         android:layout_width="128px"
         android:layout_height="128px"
-        android:layout_marginTop="220dp"
         android:layout_marginStart="200dp"
+        android:layout_marginTop="150dp"
         android:background="?android:attr/selectableItemBackground"
         android:scaleType="fitCenter"
         android:src="@raw/xbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="132dp"
         android:fontFamily="@font/baloo2_bold"
         android:text="Điểm danh hằng ngày"
         android:textColor="#ffffff"
         android:textSize="60px"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

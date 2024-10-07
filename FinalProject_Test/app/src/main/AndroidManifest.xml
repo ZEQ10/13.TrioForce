@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FinalProject_Test"
         tools:targetApi="31">
         <activity
+            android:name=".activity_choose_mode"
+            android:exported="false" />
+        <activity
             android:name=".dailyquiz_popup"
             android:exported="false" />
         <activity

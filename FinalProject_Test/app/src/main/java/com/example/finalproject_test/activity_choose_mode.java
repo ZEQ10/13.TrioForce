@@ -1,5 +1,6 @@
 package com.example.finalproject_test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -10,23 +11,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class dailycheckin_popup extends AppCompatActivity {
-    ImageButton btnThoat;
+public class activity_choose_mode extends AppCompatActivity {
+ImageButton btnVeManHinhChinh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.dailycheckin_popup);
+        setContentView(R.layout.activity_choose_mode);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnThoat=(ImageButton) findViewById(R.id.Thoat);
-        btnThoat.setOnClickListener(new View.OnClickListener() {
+        btnVeManHinhChinh=(ImageButton) findViewById(R.id.TroVeManHinhChinh);
+        btnVeManHinhChinh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(activity_choose_mode.this, MainScreen.class);
+                startActivity(intent);
             }
         });
     }
