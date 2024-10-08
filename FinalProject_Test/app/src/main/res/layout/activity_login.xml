@@ -24,13 +24,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="595px"
-        android:layout_height="150px"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/baloo2_bold"
         android:text="Đăng nhập"
-        android:textSize="110px"
+        android:textSize="42dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.548"
@@ -62,7 +62,7 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edt_TenNguoiDung"
-            android:layout_width="850px"
+            android:layout_width="324dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -75,11 +75,11 @@
             android:hint="Tên người dùng"
             android:inputType="text"
             android:padding="20dp"
-            android:textSize="40px" />
+            android:textSize="16dp" />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edt_MatKhau"
-            android:layout_width="850px"
+            android:layout_width="324dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -88,7 +88,7 @@
             android:drawableLeft="@raw/lock"
             android:ems="10"
             android:hint="Mật khẩu"
-            android:textSize="40px"
+            android:textSize="16dp"
             android:fontFamily="@font/baloo2_regular"
             android:inputType="text"
             android:padding="20dp" />
@@ -113,7 +113,7 @@
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:text="Hiện mật khẩu"
-            android:textSize="40px"
+            android:textSize="16dp"
             android:fontFamily="@font/baloo2_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/layout_verti" />
@@ -122,12 +122,12 @@
             android:id="@+id/quenmatkhau"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:text="Quên mật khẩu?"
             android:textColor="#ef2222"
-            android:textSize="40px"
+            android:textSize="16dp"
             android:fontFamily="@font/baloo2_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/show_password" />

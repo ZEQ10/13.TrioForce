@@ -10,8 +10,8 @@
 
     <LinearLayout
         android:id="@+id/layout1"
-        android:layout_width="1017px"
-        android:layout_height="1082px"
+        android:layout_width="388dp"
+        android:layout_height="413dp"
         android:layout_marginTop="200dp"
         android:orientation="vertical"
         android:background="@drawable/bg_popup"
@@ -19,11 +19,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <TextView
-            android:layout_width="753px"
+            android:layout_width="287dp"
             android:layout_height="wrap_content"
             android:text="Câu hỏi hằng ngày"
             android:textColor="@color/black"
-            android:textSize="70px"
+            android:textSize="27sp"
             android:fontFamily="@font/baloo2_bold"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
@@ -35,12 +35,12 @@
 
         <TextView
             android:id="@+id/CauHoi"
-            android:layout_width="825px"
+            android:layout_width="315dp"
             android:textAlignment="center"
             android:layout_height="wrap_content"
             android:text="Chủ tịch của nước Việt Nam hiện tại là ai?"
             android:fontFamily="@font/baloo2_bold"
-            android:textSize="50px"
+            android:textSize="19sp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center"/>
@@ -52,23 +52,23 @@
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/DapAn_A"
-                        android:layout_width="900px"
+                        android:layout_width="343dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="A: Nguyễn Xuân Phúc"
                         android:layout_marginBottom="10dp"
-                        android:textSize="60px"
+                        android:textSize="23sp"
                         android:fontFamily="@font/baloo2_bold"
                         android:textColor="@color/white"
                         android:background="@drawable/btn_option_a"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/DapAn_B"
-                android:layout_width="900px"
+                android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="B: Tô Lâm"
-                android:textSize="60px"
+                android:textSize="23sp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/baloo2_bold"
                 android:textColor="@color/white"
@@ -76,11 +76,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/DapAn_C"
-                android:layout_width="900px"
+                android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="C: Nguyễn Phú Trọng"
-                android:textSize="60px"
+                android:textSize="23sp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/baloo2_bold"
                 android:textColor="@color/white"
@@ -88,11 +88,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/DapAn_D"
-                android:layout_width="900px"
+                android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="D: Nguyễn Minh Triết"
-                android:textSize="60px"
+                android:textSize="23sp"
                 android:fontFamily="@font/baloo2_bold"
                 android:textColor="@color/white"
                 android:background="@drawable/btn_option_d"/>
@@ -103,8 +103,8 @@
 
     <ImageButton
         android:id="@+id/dongcuaso"
-        android:layout_width="128px"
-        android:layout_height="128px"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
         android:layout_marginTop="180dp"
         android:background="?android:attr/selectableItemBackground"
         android:scaleType="fitCenter"

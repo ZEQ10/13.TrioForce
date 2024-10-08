@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="It's time to relax!!!"
-        android:textSize="60px"
+        android:textSize="23sp"
         android:scaleType="fitCenter"
         android:textStyle="italic"
         android:fontFamily="@font/baloo2_bold"
@@ -25,8 +25,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="874px"
-        android:layout_height="504px"
+        android:layout_width="333dp"
+        android:layout_height="192dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

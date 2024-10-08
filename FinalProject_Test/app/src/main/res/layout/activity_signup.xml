@@ -16,7 +16,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/baloo2_bold"
         android:text="Đăng ký"
-        android:textSize="110px"
+        android:textSize="42sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -133,12 +133,12 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="850px"
+                android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/userr"
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="40px"
+                android:textSize="16sp"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Tên người dùng" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -156,12 +156,12 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="850px"
+                android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/email"
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="40px"
+                android:textSize="16sp"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -178,13 +178,13 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="850px"
+                android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/calendarr"
                 android:drawableEnd="@raw/calendar2"
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="40px"
+                android:textSize="16sp"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Ngày sinh" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -206,7 +206,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Giới tính:"
-            android:textSize="30px" />
+            android:textSize="12sp" />
 
             <RadioGroup
                 android:id="@+id/ChonGioiTinh"
@@ -219,7 +219,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nam"
-                android:textSize="30px"
+                android:textSize="12sp"
                 android:fontFamily="@font/baloo2_regular"
                 android:checked="true" />
 
@@ -228,7 +228,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo2_regular"
-                android:textSize="30px"
+                android:textSize="12sp"
                 android:text="Nữ" />
 
             <RadioButton
@@ -236,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo2_regular"
-                android:textSize="30px"
+                android:textSize="12sp"
                 android:text="Khác" />
 
             </RadioGroup>
@@ -269,12 +269,12 @@
              app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="850px"
+                android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/lock"
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="40px"
+                android:textSize="16sp"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Mật khẩu" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -293,12 +293,12 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="850px"
+                android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/lock"
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="40px"
+                android:textSize="16sp"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Xác nhận mật khẩu" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -321,7 +321,7 @@
         android:fontFamily="@font/baloo2_regular"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="70px"
+        android:textSize="27sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_verti2" />
@@ -344,7 +344,7 @@
             android:fontFamily="@font/baloo2_regular"
             android:text="Bạn đã có tài khoản?"
             android:textColor="@color/black"
-            android:textSize="40px" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/formDangNhap"
@@ -353,7 +353,7 @@
             android:fontFamily="@font/baloo2_bold"
             android:text="Đăng nhập"
             android:textColor="#ef2222"
-            android:textSize="40px"
+            android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

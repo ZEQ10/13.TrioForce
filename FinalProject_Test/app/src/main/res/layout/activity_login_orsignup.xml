@@ -15,7 +15,7 @@
         android:fontFamily="@font/baloo2_bold"
         android:scaleType="fitCenter"
         android:text="It's time to relax!!!"
-        android:textSize="60px"
+        android:textSize="23sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="874px"
-        android:layout_height="504px"
+        android:layout_width="333dp"
+        android:layout_height="192dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,8 +47,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDangNhap"
-            android:layout_width="650px"
-            android:layout_height="140px"
+            android:layout_width="248dp"
+            android:layout_height="54dp"
 
             android:layout_gravity="center"
             android:background="@drawable/bg_login"
@@ -57,13 +57,13 @@
             android:text="Đăng nhập"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textSize="60px" />
+            android:textSize="23sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDangKy"
-            android:layout_width="650px"
             android:layout_marginTop="20dp"
-            android:layout_height="140px"
+            android:layout_width="248dp"
+            android:layout_height="54dp"
             android:background="@drawable/bg_signup"
 
             android:layout_gravity="center"
@@ -71,7 +71,7 @@
             android:fontFamily="@font/baloo2_bold"
             android:textColor="#ffffff"
             android:textAllCaps="false"
-            android:textSize="60px" />
+            android:textSize="23sp" />
     </LinearLayout>
 
 
