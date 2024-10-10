@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/bxh"
+        android:id="@+id/storage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/baloo2_regular"
@@ -25,16 +25,41 @@
         app:layout_constraintVertical_bias="0.00999999"/>
 
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:tabIndicatorColor="#CDFFFFFF"
+        app:tabIndicatorHeight="45dp"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicator="@drawable/bg_tab_selected_storage"
+        app:tabRippleColor="@android:color/transparent"
+        android:layout_marginTop="8dp"
+        app:tabTextAppearance="@style/CustomTabTextAppearance"
+        android:background="@drawable/bg_itemtab_storage"
+        app:tabTextColor="#000000"
+        app:tabSelectedTextColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storage">
 
 
+    </com.google.android.material.tabs.TabLayout>
 
 
+    <!--MenuBAR-->
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:layout_marginTop="4dp"
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
-
-
-<!--MenuBAR-->
     <LinearLayout
         android:weightSum="4"
         android:id="@+id/menubar"
@@ -132,32 +157,6 @@
 
     </LinearLayout>
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="405dp"
-        android:layout_height="40dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="116dp">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đã lưu" >
-
-        </com.google.android.material.tabs.TabItem>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đã tạo">
-
-        </com.google.android.material.tabs.TabItem>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tiến độ">
-            
-        </com.google.android.material.tabs.TabItem>
-    </com.google.android.material.tabs.TabLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
