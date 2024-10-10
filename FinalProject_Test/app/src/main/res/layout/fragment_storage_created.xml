@@ -156,7 +156,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/baloo2_bold"
-                    android:text="Tháng 9 năm 2024"
+                    android:text="Tháng 10 năm 2022"
                     android:textAlignment="textStart"
                     android:textColor="@color/black" />
 
@@ -180,20 +180,57 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:fontFamily="@font/baloo2_bold"
-                        android:text="Đố vui:" />
+                        android:text="Bóng đá:" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/baloo2_regular"
-                        android:text="Đuôi thì chẳng thấy, mà có hai đầu?"
+                        android:text="Đội bóng nào vô địch World Cup nhiều nhất ?"
                         android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/baloo2_regular"
-                        android:text="Đáp án: Cây cầu"
+                        android:text="Đáp án: Brazil"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="9.524dp"
+                    android:background="@drawable/border_tt_storage"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="3dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/baloo2_bold"
+                        android:text="Khoa học:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo2_regular"
+                        android:text="Đầu máy hơi nước được sản xuất vào năm nào?"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo2_regular"
+                        android:text="Đáp án: Năm 1784"
                         android:textSize="14sp" />
 
                 </LinearLayout>
