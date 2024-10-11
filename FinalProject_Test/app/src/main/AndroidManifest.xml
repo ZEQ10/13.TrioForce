@@ -13,7 +13,7 @@
         android:theme="@style/Theme.FinalProject_Test"
         tools:targetApi="31">
         <activity
-            android:name=".storage"
+            android:name=".createQuiz"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +22,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".storage"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name=".leaderbroad"
             android:exported="false" />
-
         <activity
             android:name=".MainScreen"
             android:exported="false" />

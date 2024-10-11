@@ -20,5 +20,12 @@
         <item>Đố vui</item>
     </string-array>
 
+    <string-array name="level">
+        <item>Dễ</item>
+        <item>Bình thường</item>
+        <item>Khó</item>
+
+    </string-array>
+
 
 </resources>
