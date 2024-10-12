@@ -13,6 +13,21 @@
         android:theme="@style/Theme.FinalProject_Test"
         tools:targetApi="31">
         <activity
+            android:name=".AccountProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ExampleQuizPlayWithTopic"
+            android:exported="false" />
+        <activity
+            android:name=".RandomQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ExampleForQuizStart"
+            android:exported="false" />
+        <activity
+            android:name=".activity_example_for_quiz_end"
+            android:exported="false" />
+        <activity
             android:name=".MainScreen"
             android:exported="false" />
         <activity
@@ -20,9 +35,6 @@
             android:exported="false" />
         <activity
             android:name=".LoginORSignup"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".login_activity"

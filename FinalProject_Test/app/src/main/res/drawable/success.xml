@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="#80FFFDED" />
+        </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:src="@raw/congratulation"
+            android:gravity="center" />
+    </item>
+
+
+
+
+</layer-list>
