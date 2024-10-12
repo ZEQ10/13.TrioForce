@@ -364,9 +364,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?android:attr/selectableItemBackground"
-                android:padding="15dp"
+                android:padding="15dp"/>
 
-                android:src="@raw/home"/>
+
 
         </LinearLayout>
 

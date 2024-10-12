@@ -161,23 +161,37 @@
 
     </LinearLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/fram_1"
         android:layout_width="950px"
         android:layout_height="686px"
-
         android:layout_marginTop="40dp"
         android:background="@drawable/rounded_corners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/layoutEx1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+        <ImageButton
+            android:id="@+id/imageBtnSave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@raw/icons8_save" />
 
         <ImageView
             android:id="@+id/imgRandom"
             android:layout_width="250dp"
-            android:layout_height="170dp"
+            android:layout_height="130dp"
             android:layout_marginLeft="140px"
-            android:layout_marginTop="50px"
+
             android:src="@raw/quabongvang" />
 
         <TextView
@@ -186,21 +200,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:gravity="center"
-            android:layout_marginBottom="70px"
+            android:layout_marginTop="5dp"
             android:text="Cầu thủ nào đã dành được quả bóng vàng 2023 ?"
             android:textSize="20sp" />
 
-        <ImageButton
-            android:id="@+id/imageBtnSave"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="top|end"
-            android:layout_marginTop="50px"
-            android:layout_marginEnd="50px"
-            android:background="#00FFFFFF"
-            android:scaleType="fitCenter"
-            app:srcCompat="@raw/icons8_save" />
-    </FrameLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_rd1"

@@ -12,8 +12,4 @@
             android:src="@raw/congratulation"
             android:gravity="center" />
     </item>
-
-
-
-
 </layer-list>

@@ -341,14 +341,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_menubar_2">
 
-            <ImageButton
-                android:id="@+id/Home"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
-                android:padding="15dp"
 
-                android:src="@raw/home"/>
 
         </LinearLayout>
 
