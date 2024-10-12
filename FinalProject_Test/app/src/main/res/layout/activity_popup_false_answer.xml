@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_popup_false_answer">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="200dp"
+        android:layout_width="1015px"
+        android:layout_height="656px"
+        android:orientation="vertical"
+        android:background="@drawable/bg_popup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lyaout_child"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginStart="130dp"
+                    android:layout_width="324px"
+                    android:layout_height="346px"
+                    android:src="@raw/false_answer"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:text="Câu trả lời chưa chính xác"
+                    android:fontFamily="@font/baloo2_extrabold"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hẹn gặp lại bạn vào ngày mai nhé"
+                        android:fontFamily="@font/baloo2_extrabold"
+                        android:textSize="60px"
+                        android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Thoatt"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="180dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@raw/xbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

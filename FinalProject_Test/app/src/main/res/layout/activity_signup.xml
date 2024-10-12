@@ -133,7 +133,7 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="324dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/userr"
                 android:drawablePadding="5dp"
@@ -156,7 +156,7 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="324dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/email"
                 android:drawablePadding="5dp"
@@ -178,7 +178,7 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="324dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/calendarr"
                 android:drawableEnd="@raw/calendar2"
@@ -269,7 +269,7 @@
              app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="324dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/lock"
                 android:drawablePadding="5dp"
@@ -293,7 +293,7 @@
             app:boxBackgroundMode="none">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="324dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/lock"
                 android:drawablePadding="5dp"

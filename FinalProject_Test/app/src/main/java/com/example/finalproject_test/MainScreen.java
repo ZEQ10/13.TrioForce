@@ -4,22 +4,30 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.example.finalproject_test.screenfragment.ViewPageAdapter;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class MainScreen extends AppCompatActivity {
-    Button btnChonTheLoai;
-    ImageButton btnDiemDanh, btnThoat;
-    Dialog DiemDanh_dialog;
+
+    private ViewPager2 vp;
+    private BottomNavigationView bnv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,47 +38,61 @@ public class MainScreen extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnChonTheLoai=(Button) findViewById(R.id.TheThao);
-        btnDiemDanh=(ImageButton) findViewById(R.id.DiemDanh);
-
-        btnChonTheLoai.setOnClickListener(new View.OnClickListener() {
+        vp=findViewById(R.id.view_page);
+        bnv=findViewById(R.id.menu_bar);
+        ViewPageAdapter vpa = new ViewPageAdapter(this);
+        vp.setAdapter(vpa);
+        vp.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainScreen.this, activity_choose_mode.class);
-                startActivity(intent);
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                switch(position){
+                    case 0:
+                        bnv.getMenu().findItem(R.id.menu_home).setCheckable(true);
+                        break;
+                    case 1:
+                        bnv.getMenu().findItem(R.id.menu_cup).setCheckable(true);
+                        break;
+                    case 2:
+                        bnv.getMenu().findItem(R.id.menu_bookmark).setCheckable(true);
+                        break;
+                    case 3:
+                        bnv.getMenu().findItem(R.id.menu_user).setCheckable(true);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                super.onPageScrollStateChanged(state);
             }
         });
 
-//        DiemDanh_dialog = new Dialog(MainScreen.this);
-//        DiemDanh_dialog.setContentView(R.layout.dailycheckin_popup);
-       // DiemDanh_dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-//        DiemDanh_dialog.setCancelable(false);
-        btnDiemDanh.setOnClickListener(new View.OnClickListener() {
+        bnv.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                showPopup();
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                if (item.getItemId() == R.id.menu_home) {
+                    vp.setCurrentItem(0);
+                    return true;
+                } else if (item.getItemId() == R.id.menu_cup) {
+                    vp.setCurrentItem(1);
+                    return true;
+                } else if (item.getItemId() == R.id.menu_bookmark) {
+                    vp.setCurrentItem(2);
+                    return true;
+                }
+                else if (item.getItemId() == R.id.menu_user) {
+                    vp.setCurrentItem(3);
+                    return true;
+                }
+                return false;
             }
         });
-
-    }
-    private void showPopup() {
-        // Tạo Dialog mới
-        Dialog dialog = new Dialog(MainScreen.this, R.style.CustomDialog);
-
-        // Đặt layout cho Dialog
-        dialog.setContentView(R.layout.dailycheckin_popup);
-        btnThoat=dialog.findViewById(R.id.Thoat);
-        btnThoat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-        dialog.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
-        WindowManager.LayoutParams layoutParams = dialog.getWindow().getAttributes();
-        layoutParams.gravity = Gravity.TOP;
-        layoutParams.y = 10;
-        dialog.getWindow().setAttributes(layoutParams);
-        dialog.show();
-    }
-}
+        }
+    }//end
