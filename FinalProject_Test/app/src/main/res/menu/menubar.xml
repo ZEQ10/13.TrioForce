@@ -2,7 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_home"
         android:title="Home"
-        android:icon="@raw/homebtn2"/>
+        android:icon="@raw/homebtn2"
+
+       />
 
     <item android:id="@+id/menu_cup"
         android:title="Leaderboard"
