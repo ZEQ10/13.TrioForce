@@ -35,15 +35,15 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:layout_marginStart="130dp"
-                    android:layout_width="324px"
-                    android:layout_height="346px"
+                    android:layout_width="123dp"
+                    android:layout_height="132dp"
                     android:src="@raw/true_answer"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="130px"
                     android:text="Câu trả lời chính xác"
                     android:fontFamily="@font/baloo2_extrabold"
-                    android:textSize="60px"
+                    android:textSize="23sp"
                     android:gravity="center"
                     android:textAlignment="center"/>
                 <LinearLayout
@@ -52,20 +52,20 @@
                     android:layout_width="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="10dp"
-                    android:layout_height="133px">
+                    android:layout_height="51dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Bạn được nhận thêm "
                         android:fontFamily="@font/baloo2_extrabold"
-                        android:textSize="60px"
+                        android:textSize="23sp"
                         android:textAlignment="center"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="50"
                         android:fontFamily="@font/baloo2_extrabold"
-                        android:textSize="60px"
+                        android:textSize="23sp"
                         android:textAlignment="center"/>
                     <ImageView
                         android:layout_marginStart="5dp"

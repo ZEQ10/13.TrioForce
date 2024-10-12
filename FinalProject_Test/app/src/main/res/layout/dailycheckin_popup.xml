@@ -29,7 +29,7 @@
             android:background="@drawable/bg_around"
             android:padding="10dp"
             android:text="Điểm danh để nhận thêm xu"
-            android:textSize="50px" />
+            android:textSize="19sp" />
 
         <LinearLayout
             android:id="@+id/child"
