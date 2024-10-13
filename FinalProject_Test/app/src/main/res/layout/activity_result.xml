@@ -58,15 +58,14 @@
             android:layout_marginTop="60dp"
             android:layout_gravity="center">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/rs_home"
+            <ImageButton
+                android:id="@+id/image_button"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:background="@drawable/rs_home"
-                android:layout_gravity="center"
-                android:paddingLeft="6dp"
-                android:paddingBottom="3dp"
-                android:drawableStart="@raw/homee" />
+                android:src="@raw/btn_home"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitCenter"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rs_replay"
@@ -76,13 +75,16 @@
                 android:layout_marginRight="30dp"
                 android:background="@drawable/rs_replay"
                 android:layout_gravity="center"
-                android:drawableStart="@raw/replay" />
+                android:paddingLeft="5dp"
+                android:drawableStart="@raw/btn_replay" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rs_next"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:background="@drawable/rs_next"
                 android:layout_gravity="center"
+                android:paddingLeft="5dp"
                 android:drawableStart="@raw/next" />
         </LinearLayout>
     </LinearLayout>
