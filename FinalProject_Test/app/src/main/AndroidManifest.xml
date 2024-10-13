@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.finalproject_test">
 
     <application
         android:allowBackup="true"
@@ -11,13 +12,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject_Test"
-        tools:targetApi="31">
+        tools:targetApi="34">
+        <activity
+            android:name=".popup_true_answer"
+            android:exported="false" />
+        <activity
+            android:name=".activity_popup_false_answer"
+            android:exported="false" />
         <activity
             android:name=".Result"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".AccountProfile_Fragment"
             android:exported="false" />
+=======
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> cf0da95a491e2a77062d285bcad648948096f5da
         <activity
             android:name=".ExampleQuizPlayWithTopic"
             android:exported="false" />
@@ -30,10 +48,6 @@
         <activity
             android:name=".activity_example_for_quiz_end"
             android:exported="false" />
-
-        <activity
-            android:name=".popup_true_answer"
-            android:exported="false" />
         <activity
             android:name=".activity_catagories_choose"
             android:exported="false" />
@@ -42,37 +56,29 @@
             android:exported="false" />
         <activity
             android:name=".dailyquiz_popup"
-
+            android:exported="false" />
+        <activity
+            android:name=".createQuiz"
             android:exported="false" />
         <activity
             android:name=".MainScreen"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".activity_signup"
             android:exported="false" />
         <activity
             android:name=".LoginORSignup"
-
             android:exported="false" />
-
         <activity
             android:name=".login_activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".dailycheckin_popup"
+            android:exported="false" />
+        <activity
+            android:name=".storage"
+            android:exported="false" />
 
-        </activity>
-
-        <activity android:name=".storage"
-            android:exported="false">
-
-        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

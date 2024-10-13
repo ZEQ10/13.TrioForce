@@ -1,18 +1,25 @@
-package com.example.finalproject_test;
+package com.example.finalproject_test.screenfragment;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.finalproject_test.R;
+import com.example.finalproject_test.ViewpagerAdapter;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link storage_bookmarkedFragment#newInstance} factory method to
+ * Use the {@link storage_fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class storage_bookmarkedFragment extends Fragment {
+public class storage_fragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,8 +29,11 @@ public class storage_bookmarkedFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
-    public storage_bookmarkedFragment() {
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager2;
+    private ViewpagerAdapter adapter;
+    private View view;
+    public storage_fragment() {
         // Required empty public constructor
     }
 
@@ -33,11 +43,11 @@ public class storage_bookmarkedFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment storage_bookmarkedFragment.
+     * @return A new instance of fragment storage_fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static storage_bookmarkedFragment newInstance(String param1, String param2) {
-        storage_bookmarkedFragment fragment = new storage_bookmarkedFragment();
+    public static storage_fragment newInstance(String param1, String param2) {
+        storage_fragment fragment = new storage_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,6 +68,27 @@ public class storage_bookmarkedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_storage_bookmarked, container, false);
+        view= inflater.inflate(R.layout.fragment_storage_fragment, container, false);
+        tabLayout = view.findViewById(R.id.tabLayout);
+        viewPager2 = view.findViewById(R.id.viewPager2);
+
+
+        adapter = new ViewpagerAdapter(this);
+        viewPager2.setAdapter(adapter);
+
+        new TabLayoutMediator(tabLayout,viewPager2,((tab, position) -> {
+            switch (position){
+                case 0:
+                    tab.setText("Đã tạo");
+                    break;
+                case 1:
+                    tab.setText("Đã lưu");
+                    break;
+                case 2:
+                    tab.setText("Tiến độ");
+                    break;
+            }
+        })).attach();
+        return view;
     }
 }

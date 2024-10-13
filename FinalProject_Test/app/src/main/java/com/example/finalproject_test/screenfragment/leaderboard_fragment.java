@@ -1,18 +1,20 @@
-package com.example.finalproject_test;
+package com.example.finalproject_test.screenfragment;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.example.finalproject_test.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link storage_bookmarkedFragment#newInstance} factory method to
+ * Use the {@link leaderboard_fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class storage_bookmarkedFragment extends Fragment {
+public class leaderboard_fragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +25,7 @@ public class storage_bookmarkedFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public storage_bookmarkedFragment() {
+    public leaderboard_fragment() {
         // Required empty public constructor
     }
 
@@ -33,11 +35,11 @@ public class storage_bookmarkedFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment storage_bookmarkedFragment.
+     * @return A new instance of fragment leaderboard_fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static storage_bookmarkedFragment newInstance(String param1, String param2) {
-        storage_bookmarkedFragment fragment = new storage_bookmarkedFragment();
+    public static leaderboard_fragment newInstance(String param1, String param2) {
+        leaderboard_fragment fragment = new leaderboard_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,6 +60,6 @@ public class storage_bookmarkedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_storage_bookmarked, container, false);
+        return inflater.inflate(R.layout.fragment_leaderboard_fragment, container, false);
     }
 }
