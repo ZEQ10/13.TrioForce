@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.FinalProject_Test" parent="Base.Theme.FinalProject_Test" />
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="bottomNavigationStyle">@style/MyBottomNavigationStyle</item>
+    </style>
+
 </resources>

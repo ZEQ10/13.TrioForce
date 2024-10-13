@@ -8,19 +8,7 @@
     android:background="@raw/bg"
     tools:context=".login_activity">
 
-    <!--    <LinearLayout-->
-<!--        android:id="@+id/layout_verti1"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/imageView"-->
-<!--        app:layout_constraintVertical_bias="0.0">-->
 
-<!--    </LinearLayout>-->
 
     <TextView
         android:id="@+id/textView"
@@ -66,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext"
             android:drawableLeft="@raw/userr"
             android:drawablePadding="10dp"
@@ -114,7 +102,7 @@
             android:layout_weight="1"
             android:text="Hiện mật khẩu"
             android:textSize="16dp"
-            android:fontFamily="@font/baloo2_bold"
+            android:fontFamily="@font/baloo2_medium"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/layout_verti" />
 
@@ -128,7 +116,7 @@
             android:text="Quên mật khẩu?"
             android:textColor="#ef2222"
             android:textSize="16dp"
-            android:fontFamily="@font/baloo2_bold"
+            android:fontFamily="@font/baloo2_medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/show_password" />
 
@@ -139,18 +127,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/btn_dang_nhap"
         android:elevation="100dp"
         android:paddingStart="50dp"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
+
         android:paddingEnd="50dp"
-        android:paddingBottom="10dp"
+        android:paddingBottom="5dp"
         android:text="Đăng nhập"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="70px"
+        android:textSize="25sp"
         android:fontFamily="@font/baloo2_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,16 +171,18 @@
 
         <ImageButton
             android:id="@+id/facebook_button"
-            android:layout_width="75dp"
-            android:layout_height="match_parent"
+            android:layout_width="65dp"
+            android:scaleType="fitCenter"
+            android:layout_height="65dp"
             android:background="?android:attr/selectableItemBackground"
             android:src="@raw/facebook_ic" />
 
         <ImageButton
             android:id="@+id/google_button"
-            android:layout_width="75dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
+            android:scaleType="fitCenter"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="50dp"
             android:background="?android:attr/selectableItemBackground"
             android:src="@raw/google_ic" />
 

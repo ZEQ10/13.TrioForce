@@ -175,7 +175,7 @@
                 android:layout_gravity="end"
                 android:textColor="#FFC72E"
                 android:layout_marginStart="130dp"
-                android:fontFamily="@font/baloo2_bold"
+                android:fontFamily="@font/baloo2_medium"
                 android:text="Tất cả ▼"
                 android:textSize="19sp" />
         </LinearLayout>
@@ -666,5 +666,6 @@
                 android:layout_height="wrap_content"
                 android:src="@raw/questionary"/>
         </LinearLayout>
+
     </RelativeLayout>
 </ScrollView>

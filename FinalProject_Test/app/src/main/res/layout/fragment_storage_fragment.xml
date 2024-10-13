@@ -26,7 +26,7 @@
 
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_marginStart="-20dp"
+
         android:id="@+id/tabLayout"
         android:layout_width="350dp"
         android:layout_height="45dp"
@@ -44,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/storage">
 
-
     </com.google.android.material.tabs.TabLayout>
 
 
@@ -59,9 +58,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

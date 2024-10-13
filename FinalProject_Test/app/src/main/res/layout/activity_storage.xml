@@ -43,26 +43,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/storage">
-
-
     </com.google.android.material.tabs.TabLayout>
 
-
     <!--MenuBAR-->
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
-        android:layout_height="555dp"
+        android:layout_height="650dp"
         android:layout_marginTop="4dp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,17 @@
 package com.example.finalproject_test;
 
-import android.app.Dialog;
+
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
+
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
+
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
+
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -38,6 +39,7 @@ public class MainScreen extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         vp=findViewById(R.id.view_page);
         bnv=findViewById(R.id.menu_bar);
         ViewPageAdapter vpa = new ViewPageAdapter(this);
@@ -94,5 +96,10 @@ public class MainScreen extends AppCompatActivity {
                 return false;
             }
         });
-        }
-    }//end
+
+
+
+
+    }
+}
+

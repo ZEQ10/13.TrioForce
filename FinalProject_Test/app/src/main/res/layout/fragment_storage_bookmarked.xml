@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="555dp"
+    android:layout_height="650dp"
     android:layout_gravity="center_vertical"
     android:background="#00898989"
     tools:context=".storage_bookmarkedFragment">
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="#009B1D1D"
         android:orientation="vertical"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="5dp"
         android:padding="16dp">
 
         <LinearLayout

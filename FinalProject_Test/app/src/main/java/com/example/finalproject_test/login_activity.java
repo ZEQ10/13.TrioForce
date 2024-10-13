@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +47,7 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent chuyensangManHinhChinh = new Intent(login_activity.this, MainScreen.class);
+                Toast.makeText(login_activity.this, "Đăng nhập thành công!!", Toast.LENGTH_SHORT).show();
                 startActivity(chuyensangManHinhChinh);
             }
         });

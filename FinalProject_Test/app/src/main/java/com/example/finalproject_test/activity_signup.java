@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,8 +38,9 @@ public class activity_signup extends AppCompatActivity {
         btnDK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent chuyensangManHinhChinh = new Intent(activity_signup.this, login_activity.class);
+                Intent chuyensangManHinhChinh = new Intent(activity_signup.this, MainScreen.class);
                 startActivity(chuyensangManHinhChinh);
+                Toast.makeText(activity_signup.this, "Đăng nhập thành công!!", Toast.LENGTH_SHORT).show();
             }
         });
     }

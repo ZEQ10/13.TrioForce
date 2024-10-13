@@ -10,4 +10,11 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
+
+    <style name="MyBottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- Các thuộc tính bạn muốn cài đặt -->
+        <item name="itemIconTint">@color/custom_color_bar</item>
+        <item name="itemTextColor">@color/custom_color_bar</item>
+    </style>
+
 </resources>
