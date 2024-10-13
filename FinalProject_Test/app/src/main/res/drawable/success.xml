@@ -7,9 +7,5 @@
         </shape>
     </item>
 
-    <item>
-        <bitmap
-            android:src="@raw/congratulation"
-            android:gravity="center" />
-    </item>
+
 </layer-list>

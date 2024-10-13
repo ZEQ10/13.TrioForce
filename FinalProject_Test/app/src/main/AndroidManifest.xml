@@ -23,6 +23,10 @@
             android:name=".Result"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
+            android:name=".AccountProfile_Fragment"
+            android:exported="false" />
+=======
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -31,6 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+>>>>>>> cf0da95a491e2a77062d285bcad648948096f5da
         <activity
             android:name=".ExampleQuizPlayWithTopic"
             android:exported="false" />

@@ -91,11 +91,11 @@
                 android:layout_width="343dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="D: Nguyễn Minh Triết"
-                android:textSize="23sp"
+                android:background="@drawable/btn_option_d"
                 android:fontFamily="@font/baloo2_bold"
+                android:text="D: Nguyễn Minh Triết"
                 android:textColor="@color/white"
-                android:background="@drawable/btn_option_d"/>
+                android:textSize="23sp" />
 
         </LinearLayout>
 
