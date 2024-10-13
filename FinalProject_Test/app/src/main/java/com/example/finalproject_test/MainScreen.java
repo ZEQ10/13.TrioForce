@@ -2,6 +2,7 @@ package com.example.finalproject_test;
 
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,7 +11,7 @@ import android.view.View;
 
 import android.widget.Button;
 import android.widget.ImageButton;
-
+import android.widget.ImageView;
 
 
 import androidx.activity.EdgeToEdge;
@@ -29,6 +30,9 @@ public class MainScreen extends AppCompatActivity {
 
     private ViewPager2 vp;
     private BottomNavigationView bnv;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +46,14 @@ public class MainScreen extends AppCompatActivity {
 
         vp=findViewById(R.id.view_page);
         bnv=findViewById(R.id.menu_bar);
+
+        vp.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+               bnv.getMenu().getItem(position).setChecked(true);
+            }
+        });
+
         ViewPageAdapter vpa = new ViewPageAdapter(this);
         vp.setAdapter(vpa);
         vp.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {

@@ -15,7 +15,7 @@ import com.example.finalproject_test.R;
  * Use the {@link profile_fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class profile_fragment extends Fragment {
+public class        profile_fragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

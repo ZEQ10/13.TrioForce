@@ -6,8 +6,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +47,8 @@ public class mainscreen_fragment extends Fragment {
     private String mParam1;
     private String mParam2;
     Button btnChonTheLoai;
-    ImageButton btnDiemDanh, btnThoat, btnThoat2, btnThoat3;
+    ImageButton btnDiemDanh, btnThoat, btnThoat2, btnThoat3, itoProfile;
+    AppCompatButton daA, daB, daC, daD;
     Dialog DiemDanh_dialog;
     Button btncauhoihangngay,choingaybtn, taocaudobtn, dapanDung;
     TextView tvtatcatheloai,tvthethao ;
@@ -101,8 +105,19 @@ public class mainscreen_fragment extends Fragment {
         taocaudobtn=view.findViewById(R.id.btnTaoCauDo);
         dapanDung=view.findViewById(R.id.DapAn_B);
 
+        itoProfile = view.findViewById(R.id.itoprofile);
+
 
         //==========================================các sự kiện======================================================//
+
+        itoProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               ViewPager2 vpr = getActivity().findViewById(R.id.view_page);
+               vpr.setCurrentItem(3);
+            }
+        });
+
         tvthethao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -177,14 +192,57 @@ public class mainscreen_fragment extends Fragment {
         dialog.show();
     }
     //===========================================show popup 2=====================================================//
+    //lưu trạng thái đã chơi dailyquiz chưa
+    private boolean hasAnswered = false;
+    private boolean lastAnswerCorrect = false;
+
     Dialog dialog2;
     private void showPopup2() {
+
+        if(hasAnswered){
+            showPopupTrueFalse(lastAnswerCorrect);
+            return;
+        }
+
         // Create a new Dialog using the context of the hosting activity
        dialog2 = new Dialog(requireActivity(), R.style.CustomDialog);
 
         // Set the layout for the Dialog
         dialog2.setContentView(R.layout.activity_dailyquiz_popup);
         btnThoat2 = dialog2.findViewById(R.id.dongcuaso);
+        daA = dialog2.findViewById(R.id.DapAn_A);
+        daB = dialog2.findViewById(R.id.DapAn_B);
+        daD = dialog2.findViewById(R.id.DapAn_D);
+        daC = dialog2.findViewById(R.id.DapAn_C);
+
+        daA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopupTrueFalse(false);
+                dialog2.dismiss();
+            }
+        });
+        daB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopupTrueFalse(true);
+                dialog2.dismiss();
+            }
+        });
+        daC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopupTrueFalse(false);
+                dialog2.dismiss();
+            }
+        });
+        daD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopupTrueFalse(false);
+                dialog2.dismiss();
+            }
+        });
 
         // Set the click listener to dismiss the dialog
         btnThoat2.setOnClickListener(new View.OnClickListener() {
@@ -204,6 +262,39 @@ public class mainscreen_fragment extends Fragment {
         // Show the dialog
         dialog2.show();
     }
+    //===========================================show popup true /false answer=====================================================//
+
+    private void showPopupTrueFalse(boolean check){
+        Dialog dialogTF = new Dialog(requireActivity(), R.style.CustomDialog);
+
+        if (check){
+            dialogTF.setContentView(R.layout.activity_popup_true_answer);
+            hasAnswered=true;
+            lastAnswerCorrect=true;
+        }
+        else {
+            dialogTF.setContentView(R.layout.activity_popup_false_answer);
+            hasAnswered=true;
+            lastAnswerCorrect=false;
+        }
+        dialogTF.setCanceledOnTouchOutside(true);
+        dialogTF.show();
+
+        new Handler().postDelayed(() -> dialogTF.dismiss(),3000);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     //===========================================show popup 3=====================================================//
 //    private void showPopup3() {
 //        // Create a new Dialog using the context of the hosting activity

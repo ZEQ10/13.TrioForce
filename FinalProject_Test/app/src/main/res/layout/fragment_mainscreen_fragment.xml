@@ -7,6 +7,7 @@
     android:layout_height="914dp"
     android:clipToPadding="false"
     android:background="@raw/bg"
+
     android:fillViewport="true">
 
     <RelativeLayout
@@ -33,8 +34,10 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/itoprofile"
                     android:layout_width="wrap_content"
+                    android:background="#00FFFFFF"
                     android:layout_height="wrap_content"
                     android:src="@raw/useravatar" />
 
@@ -78,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/baloo2_bold"
-                    android:text="999999999"
+                    android:text="99999999"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -86,7 +89,7 @@
             <ImageView
                 android:id="@+id/AddCoin"
                 android:layout_width="20dp"
-                android:layout_height="27dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="-15dp"
                 android:layout_gravity="center"
                 android:src="@raw/add" />
