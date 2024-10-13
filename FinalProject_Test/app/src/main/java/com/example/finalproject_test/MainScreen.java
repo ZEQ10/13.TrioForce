@@ -98,60 +98,8 @@ public class MainScreen extends AppCompatActivity {
         });
 
 
-        Button play = findViewById(R.id.btnChoiNgay);
-        play.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent (MainScreen.this, RandomQuiz.class);
-                startActivity(it);
-                finish();
-            }
-        });
-        Button TheThao = findViewById(R.id.TheThao);
-        TheThao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainScreen.this, ExampleForQuizStart.class);
-                startActivity(it);
-                finish();
-            }
-        });
-        Button khoaHoc = findViewById(R.id.KhoaHoc);
-        khoaHoc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainScreen.this, ExampleQuizPlayWithTopic.class);
-                startActivity(it);
-                finish();
-            }
-        });
-      Button vanHoc = findViewById(R.id.VanHoc);
-      vanHoc.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              Intent it = new Intent(MainScreen.this, ExampleQuizPlayWithTopic.class);
-              startActivity(it);
-              finish();
-          }
-      });
-        Button lichSu = findViewById(R.id.LichSu);
-        lichSu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainScreen.this, ExampleQuizPlayWithTopic.class);
-                startActivity(it);
-                finish();
-            }
-        });
-        ImageButton btnUser = findViewById(R.id.User);
-        btnUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainScreen.this, AccountProfile.class);
-                startActivity(it);
-                finish();
-            }
-        });
+
+
     }
 }
 

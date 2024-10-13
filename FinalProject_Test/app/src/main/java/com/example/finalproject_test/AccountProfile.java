@@ -35,12 +35,7 @@ public class AccountProfile extends AppCompatActivity {
         setupPhoneDialog();
         setupSuccessDialog();
 
-        ImageButton btnHome = findViewById(R.id.Home);
-        btnHome.setOnClickListener(view -> {
-            Intent it = new Intent(AccountProfile.this, MainScreen.class);
-            startActivity(it);
-            finish();
-        });
+
 
         btndangxuat = findViewById(R.id.btnDangXuat);
         btndangxuat.setOnClickListener(view -> {

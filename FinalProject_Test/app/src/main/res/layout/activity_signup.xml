@@ -127,20 +127,29 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:background="@drawable/edittext"
             android:maxEms="20"
             android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:boxStrokeColor="#C71515"
             app:boxBackgroundMode="none">
 
-            <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/userr"
                 android:drawablePadding="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:textSize="16sp"
+                android:background="@null"
+
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Tên người dùng" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -150,6 +159,10 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
             android:background="@drawable/edittext"
             android:maxEms="20"
             android:inputType="textEmailAddress"
@@ -162,6 +175,7 @@
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
                 android:textSize="16sp"
+                android:background="@null"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -174,6 +188,10 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/edittext"
             android:maxEms="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
             android:inputType="date"
             app:boxBackgroundMode="none">
 
@@ -186,21 +204,25 @@
                 android:layout_marginBottom="5dp"
                 android:textSize="16sp"
                 android:fontFamily="@font/baloo2_regular"
-                android:hint="Ngày sinh" />
+                android:hint="Ngày sinh"
+                android:background="@null"/>
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_tv_gioitinh"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_verti">
+
         <TextView
             android:id="@+id/tv_GioiTinh"
             android:layout_width="wrap_content"
@@ -208,38 +230,38 @@
             android:text="Giới tính:"
             android:textSize="12sp" />
 
-            <RadioGroup
-                android:id="@+id/ChonGioiTinh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/ChonGioiTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/radioButtonMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nam"
-                android:textSize="12sp"
+                android:checked="true"
                 android:fontFamily="@font/baloo2_regular"
-                android:checked="true" />
+                android:text="Nam"
+                android:textSize="12sp" />
 
             <RadioButton
                 android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo2_regular"
-                android:textSize="12sp"
-                android:text="Nữ" />
+                android:text="Nữ"
+                android:textSize="12sp" />
 
             <RadioButton
                 android:id="@+id/radioButtonOther"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo2_regular"
-                android:textSize="12sp"
-                android:text="Khác" />
+                android:text="Khác"
+                android:textSize="12sp" />
 
-            </RadioGroup>
+        </RadioGroup>
 
     </LinearLayout>
 
@@ -250,6 +272,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -264,6 +287,10 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext"
             android:maxEms="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="0dp"
             app:passwordToggleEnabled="true"
             android:inputType="textPassword"
              app:boxBackgroundMode="none">
@@ -273,8 +300,10 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@raw/lock"
                 android:drawablePadding="5dp"
-                android:layout_marginBottom="5dp"
+
+
                 android:textSize="16sp"
+                android:background="@null"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Mật khẩu" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -285,7 +314,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="0dp"
             android:background="@drawable/edittext"
             android:maxEms="20"
             app:passwordToggleEnabled="true"
@@ -299,6 +331,7 @@
                 android:drawablePadding="5dp"
                 android:layout_marginBottom="5dp"
                 android:textSize="16sp"
+                android:background="@null"
                 android:fontFamily="@font/baloo2_regular"
                 android:hint="Xác nhận mật khẩu" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -314,14 +347,14 @@
         android:background="@drawable/btn_dang_nhap"
         android:elevation="100dp"
         android:paddingStart="50dp"
-        android:paddingTop="5dp"
+        android:paddingTop="0dp"
         android:paddingEnd="50dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="0dp"
         android:text="Đăng ký"
         android:fontFamily="@font/baloo2_regular"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="27sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_verti2" />
@@ -329,7 +362,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -341,7 +374,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:fontFamily="@font/baloo2_regular"
+            android:fontFamily="@font/baloo2_medium"
             android:text="Bạn đã có tài khoản?"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -350,7 +383,7 @@
             android:id="@+id/formDangNhap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo2_bold"
+            android:fontFamily="@font/baloo2_medium"
             android:text="Đăng nhập"
             android:textColor="#ef2222"
             android:textSize="16sp"

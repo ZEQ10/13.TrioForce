@@ -188,7 +188,7 @@
             android:layout_width="417px"
             android:layout_height="413px"
            android:layout_gravity="center"
-            android:src="@raw/image_quiz" />
+            android:src="@raw/imageplacehold" />
 
         <TextView
             android:id="@+id/txtCauhoi"
