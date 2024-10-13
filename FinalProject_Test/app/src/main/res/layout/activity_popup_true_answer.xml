@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popup_true_answer">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="200dp"
+        android:layout_width="1015px"
+        android:layout_height="656px"
+        android:orientation="vertical"
+        android:background="@drawable/bg_popup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="50dp"
+                android:layout_width="871px"
+                android:layout_height="264px"
+                android:src="@raw/congratulation"/>
+            <LinearLayout
+                android:id="@+id/lyaout_child"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginStart="130dp"
+                    android:layout_width="123dp"
+                    android:layout_height="132dp"
+                    android:src="@raw/true_answer"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:text="Câu trả lời chính xác"
+                    android:fontFamily="@font/baloo2_extrabold"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+                <LinearLayout
+                    android:id="@+id/layout_child_child"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bạn được nhận thêm "
+                        android:fontFamily="@font/baloo2_extrabold"
+                        android:textSize="23sp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:fontFamily="@font/baloo2_extrabold"
+                        android:textSize="23sp"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@raw/coinn"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Thoatt"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="180dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@raw/xbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
