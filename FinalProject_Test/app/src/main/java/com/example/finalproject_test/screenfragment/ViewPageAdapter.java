@@ -16,10 +16,11 @@ public class ViewPageAdapter extends FragmentStateAdapter {
         switch (position){
             case 0:
                 return new mainscreen_fragment();
+
             case 1:
-                return new mainscreen_fragment();
+                return new leaderboard_fragment();
             case 2:
-                return new mainscreen_fragment();
+                return new storage_fragment();
             case 3:
                 return new mainscreen_fragment();
             default:

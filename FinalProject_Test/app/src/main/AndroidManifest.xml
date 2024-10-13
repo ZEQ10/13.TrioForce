@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalproject_test"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -11,9 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject_Test"
-        tools:targetApi="31">
-        <activity
+        tools:targetApi="34">
 
+        <activity
             android:name=".activity_popup_false_answer"
             android:exported="false" />
         <activity
@@ -27,8 +28,9 @@
             android:exported="false" />
         <activity
             android:name=".dailyquiz_popup"
-
             android:exported="false" />
+        <activity android:name=".createQuiz"
+            android:exported="false"/>
         <activity
             android:name=".MainScreen"
             android:exported="false" />
@@ -37,7 +39,6 @@
             android:exported="false" />
         <activity
             android:name=".LoginORSignup"
-
             android:exported="false" />
 <!--        <activity-->
 <!--            android:name=".SplashScreen"-->
@@ -54,6 +55,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".dailycheckin_popup"
+            android:exported="false"/>
+        <activity android:name=".storage"
+            android:exported="false"/>
 
         <meta-data
             android:name="preloaded_fonts"

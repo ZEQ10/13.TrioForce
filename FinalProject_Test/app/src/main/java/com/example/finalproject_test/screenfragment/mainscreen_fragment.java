@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -18,10 +19,13 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.example.finalproject_test.LoginORSignup;
 import com.example.finalproject_test.MainScreen;
 import com.example.finalproject_test.R;
 import com.example.finalproject_test.activity_catagories_choose;
 import com.example.finalproject_test.activity_choose_mode;
+import com.example.finalproject_test.createQuiz;
+import com.example.finalproject_test.login_activity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -42,6 +46,7 @@ public class mainscreen_fragment extends Fragment {
     ImageButton btnDiemDanh, btnThoat, btnThoat2;
     Dialog DiemDanh_dialog;
     Button btncauhoihangngay;
+    Button choingaybtn;
     TextView tvtatcatheloai,tvthethao ;
     private ViewPager2 vp;
     private View view;
@@ -92,7 +97,7 @@ public class mainscreen_fragment extends Fragment {
         tvtatcatheloai=view.findViewById(R.id.TatCaTheLoai);
         tvthethao=view.findViewById(R.id.txtTheThao);
         hidden=view.findViewById(R.id.hiddenTheLoai);
-
+        choingaybtn=view.findViewById(R.id.btnChoiNgay);
         //==========================================các sự kiện======================================================//
         tvthethao.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,7 +131,17 @@ public class mainscreen_fragment extends Fragment {
                 showPopup2();
             }
         });
+        choingaybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireActivity(), createQuiz.class);
+                startActivity(intent);
+            }
+        });
+
+
         return view;
+
     }
 
     //==========================================show popup======================================================//

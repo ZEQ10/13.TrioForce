@@ -12,20 +12,22 @@
         android:id="@+id/view_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/menu_bar"/>
+        android:layout_above="@+id/menu_bar">
+
+    </androidx.viewpager2.widget.ViewPager2>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/menu_bar"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="35dp"
         android:background="@drawable/bg_menubar_2"
         app:itemIconTint="@color/custom_color_bar"
         app:itemTextColor="@color/custom_color_bar"
-        app:menu="@menu/menubar" />
+        app:menu="@menu/menubar"/>
+
 </RelativeLayout>
