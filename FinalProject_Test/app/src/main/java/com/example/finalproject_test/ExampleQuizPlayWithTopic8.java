@@ -16,30 +16,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class activity_example_for_quiz_end extends AppCompatActivity {
+public class ExampleQuizPlayWithTopic8 extends AppCompatActivity {
     Dialog dialog;
     TextView btn_dialogLuuThoat, btn_dialogHuy;
-    Button btnKetThuc;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_example_for_quiz_end);
+        setContentView(R.layout.activity_example_quiz_play_with_topic8);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-        });
-
-        Button btnLuilai = findViewById(R.id.btnLuiLai);
-        btnLuilai.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity_example_for_quiz_end.this, ExampleQuizPlayWithTopic9.class)   ;
-                startActivity(intent);
-
-            }
         });
         ImageButton btnBack = findViewById(R.id.imagebtnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +38,7 @@ public class activity_example_for_quiz_end extends AppCompatActivity {
         });
 
 
-        dialog = new Dialog(activity_example_for_quiz_end.this);
+        dialog = new Dialog(ExampleQuizPlayWithTopic8.this);
         dialog.setContentView(R.layout.dialog_out_quiz);
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.incomple));
@@ -68,22 +56,32 @@ public class activity_example_for_quiz_end extends AppCompatActivity {
         btn_dialogLuuThoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(activity_example_for_quiz_end.this, MainScreen.class);
+                Intent it = new Intent(ExampleQuizPlayWithTopic8.this, MainScreen.class);
                 startActivity(it);
                 finish();
-                Toast.makeText(activity_example_for_quiz_end.this,"Đã luu thành công ",Toast.LENGTH_LONG).show();
+                Toast.makeText(ExampleQuizPlayWithTopic8.this,"Đã luu thành công ",Toast.LENGTH_LONG).show();
                 dialog.dismiss();
             }
         });
-        btnKetThuc=findViewById(R.id.btnKetThuc);
-        btnKetThuc.setOnClickListener(new View.OnClickListener() {
+
+        Button btnLuiLai = findViewById(R.id.btnLuiLai);
+        Button btnTiepTuc = findViewById(R.id.btnTiepTuc);
+
+        btnLuiLai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent = new Intent(activity_example_for_quiz_end.this, Result.class);
-               startActivity(intent);
+                Intent it = new Intent(ExampleQuizPlayWithTopic8.this, ExampleQuizPlayWithTopic7.class);
+                startActivity(it);
+
             }
         });
+        btnTiepTuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(ExampleQuizPlayWithTopic8.this, ExampleQuizPlayWithTopic9.class);
+                startActivity(it);
 
-
+            }
+        });
     }
 }

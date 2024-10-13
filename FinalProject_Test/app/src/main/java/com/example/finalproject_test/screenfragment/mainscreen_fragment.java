@@ -26,7 +26,7 @@ import com.example.finalproject_test.LoginORSignup;
 import com.example.finalproject_test.MainScreen;
 import com.example.finalproject_test.R;
 import com.example.finalproject_test.RandomQuiz;
-import com.example.finalproject_test.activity_catagories_choose;
+
 import com.example.finalproject_test.activity_choose_mode;
 import com.example.finalproject_test.createQuiz;
 import com.example.finalproject_test.login_activity;
@@ -51,7 +51,7 @@ public class mainscreen_fragment extends Fragment {
     AppCompatButton daA, daB, daC, daD;
     Dialog DiemDanh_dialog;
     Button btncauhoihangngay,choingaybtn, taocaudobtn, dapanDung;
-    TextView tvtatcatheloai,tvthethao ;
+    TextView tvtatcatheloai,tvthethao,tvkhoahoc, tvvanhoc, tvlichsu, tvtoanhoc, tvamthuc, tvcongnghe, tvdiali, tvamnhac, tvphimanh, tvnguphap, tvdovui;
     private ViewPager2 vp;
     private View view;
     ScrollView sv;
@@ -98,8 +98,22 @@ public class mainscreen_fragment extends Fragment {
 
         btnDiemDanh=view.findViewById(R.id.DiemDanh);
         btncauhoihangngay=view.findViewById(R.id.btnChoiHangNgay);
+
         tvtatcatheloai=view.findViewById(R.id.TatCaTheLoai);
+
         tvthethao=view.findViewById(R.id.txtTheThao);
+        tvkhoahoc=view.findViewById(R.id.txtKhoaHoc);
+        tvvanhoc=view.findViewById(R.id.txtVanHoc);
+        tvlichsu=view.findViewById(R.id.txtLichSu);
+        tvtoanhoc=view.findViewById(R.id.txtToanHoc);
+        tvamthuc=view.findViewById(R.id.txtAmThuc);
+        tvcongnghe=view.findViewById(R.id.txtCongNghe);
+        tvdiali=view.findViewById(R.id.txtDialy);
+        tvamnhac=view.findViewById(R.id.txtAmNhac);
+        tvphimanh=view.findViewById(R.id.txtPhimAnh);
+        tvnguphap=view.findViewById(R.id.txtNguPhap);
+        tvdovui=view.findViewById(R.id.txtDoVui);
+
         hidden=view.findViewById(R.id.hiddenTheLoai);
         choingaybtn=view.findViewById(R.id.btnChoiNgay);
         taocaudobtn=view.findViewById(R.id.btnTaoCauDo);
@@ -125,6 +139,84 @@ public class mainscreen_fragment extends Fragment {
                 startActivity(intent);
             }
         });
+        tvkhoahoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvvanhoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvlichsu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvtoanhoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvamthuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvcongnghe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvdiali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvamnhac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvphimanh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvnguphap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+        tvdovui.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), activity_choose_mode.class);
+                startActivity(intent);
+            }
+        });
+
         tvtatcatheloai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

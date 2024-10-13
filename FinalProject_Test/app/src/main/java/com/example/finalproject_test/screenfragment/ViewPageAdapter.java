@@ -22,11 +22,9 @@ public class ViewPageAdapter extends FragmentStateAdapter {
             case 2:
                 return new storage_fragment();
             case 3:
-<<<<<<< HEAD
-                return new Account_fragment();
-=======
+
                 return new profile_fragment();
->>>>>>> cf0da95a491e2a77062d285bcad648948096f5da
+
             default:
                 return new mainscreen_fragment();
         }

@@ -23,10 +23,7 @@
             android:name=".Result"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-            android:name=".AccountProfile_Fragment"
-            android:exported="false" />
-=======
+
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -35,10 +32,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
->>>>>>> cf0da95a491e2a77062d285bcad648948096f5da
+
         <activity
             android:name=".ExampleQuizPlayWithTopic"
             android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic2"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic3"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic4"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic5"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic6"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic7"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic8"
+            android:exported="false" />
+            <activity
+            android:name=".ExampleQuizPlayWithTopic9"
+            android:exported="false" />
+
         <activity
             android:name=".RandomQuiz"
             android:exported="false" />
@@ -48,9 +70,7 @@
         <activity
             android:name=".activity_example_for_quiz_end"
             android:exported="false" />
-        <activity
-            android:name=".activity_catagories_choose"
-            android:exported="false" />
+
         <activity
             android:name=".activity_choose_mode"
             android:exported="false" />
