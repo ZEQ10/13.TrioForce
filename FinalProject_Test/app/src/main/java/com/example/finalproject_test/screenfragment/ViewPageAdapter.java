@@ -21,7 +21,7 @@ public class ViewPageAdapter extends FragmentStateAdapter {
             case 2:
                 return new mainscreen_fragment();
             case 3:
-                return new mainscreen_fragment();
+                return new Account_fragment();
             default:
                 return new mainscreen_fragment();
         }

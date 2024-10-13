@@ -28,7 +28,6 @@ public class RandomQuiz extends AppCompatActivity {
         imagebtnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Khi bấm vào nút Back, quay lại MainScreen
                 Intent intent = new Intent(RandomQuiz.this, MainScreen.class);
                 startActivity(intent);
                 finish();

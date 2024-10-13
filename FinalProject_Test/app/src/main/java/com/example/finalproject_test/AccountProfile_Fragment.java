@@ -3,19 +3,16 @@ package com.example.finalproject_test;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-public class AccountProfile extends AppCompatActivity {
+public class AccountProfile_Fragment extends AppCompatActivity {
     Dialog dialog_email, dialog_Phone, dialog_Success;
     Button btn_XacNhan_email, btn_Huy_email, btn_Huy_phone, btn_xacNhan_phone, btndangxuat;
 
@@ -23,13 +20,12 @@ public class AccountProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_account_profile);
+        setContentView(R.layout.activity_catagories_choose);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
 
         setupEmailDialog();
         setupPhoneDialog();
@@ -39,7 +35,7 @@ public class AccountProfile extends AppCompatActivity {
 
         btndangxuat = findViewById(R.id.btnDangXuat);
         btndangxuat.setOnClickListener(view -> {
-            Intent it = new Intent(AccountProfile.this, LoginORSignup.class);
+            Intent it = new Intent(AccountProfile_Fragment.this, LoginORSignup.class);
             startActivity(it);
             finish();
         });
@@ -55,7 +51,7 @@ public class AccountProfile extends AppCompatActivity {
 
 
     private void setupEmailDialog() {
-        dialog_email = new Dialog(AccountProfile.this);
+        dialog_email = new Dialog(AccountProfile_Fragment.this);
         dialog_email.setContentView(R.layout.dialog_change_email);
         dialog_email.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog_email.getWindow().setBackgroundDrawable(getDrawable(R.drawable.bg_change_email));
@@ -74,7 +70,7 @@ public class AccountProfile extends AppCompatActivity {
 
     // Setup phone dialog
     private void setupPhoneDialog() {
-        dialog_Phone = new Dialog(AccountProfile.this);
+        dialog_Phone = new Dialog(AccountProfile_Fragment.this);
         dialog_Phone.setContentView(R.layout.dialog_change_phonenumber);
         dialog_Phone.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog_Phone.getWindow().setBackgroundDrawable(getDrawable(R.drawable.bg_change_email));
@@ -93,7 +89,7 @@ public class AccountProfile extends AppCompatActivity {
 
 
     private void setupSuccessDialog() {
-        dialog_Success = new Dialog(AccountProfile.this);
+        dialog_Success = new Dialog(AccountProfile_Fragment.this);
         dialog_Success.setContentView(R.layout.dialog_success);
         dialog_Success.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog_Success.getWindow().setBackgroundDrawable(getDrawable(R.drawable.bg_change_email));

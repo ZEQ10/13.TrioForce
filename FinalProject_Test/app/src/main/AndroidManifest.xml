@@ -16,7 +16,7 @@
             android:name=".Result"
             android:exported="false" />
         <activity
-            android:name=".AccountProfile"
+            android:name=".AccountProfile_Fragment"
             android:exported="false" />
         <activity
             android:name=".ExampleQuizPlayWithTopic"
