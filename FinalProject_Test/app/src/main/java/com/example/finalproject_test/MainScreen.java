@@ -1,16 +1,17 @@
 package com.example.finalproject_test;
 
-import android.app.Dialog;
+
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
+
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
+
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
+
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -38,6 +39,7 @@ public class MainScreen extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         vp=findViewById(R.id.view_page);
         bnv=findViewById(R.id.menu_bar);
         ViewPageAdapter vpa = new ViewPageAdapter(this);
@@ -94,5 +96,62 @@ public class MainScreen extends AppCompatActivity {
                 return false;
             }
         });
-        }
-    }//end
+
+
+        Button play = findViewById(R.id.btnChoiNgay);
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent (MainScreen.this, RandomQuiz.class);
+                startActivity(it);
+                finish();
+            }
+        });
+        Button TheThao = findViewById(R.id.TheThao);
+        TheThao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainScreen.this, ExampleForQuizStart.class);
+                startActivity(it);
+                finish();
+            }
+        });
+        Button khoaHoc = findViewById(R.id.KhoaHoc);
+        khoaHoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainScreen.this, ExampleQuizPlayWithTopic.class);
+                startActivity(it);
+                finish();
+            }
+        });
+      Button vanHoc = findViewById(R.id.VanHoc);
+      vanHoc.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent it = new Intent(MainScreen.this, ExampleQuizPlayWithTopic.class);
+              startActivity(it);
+              finish();
+          }
+      });
+        Button lichSu = findViewById(R.id.LichSu);
+        lichSu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainScreen.this, ExampleQuizPlayWithTopic.class);
+                startActivity(it);
+                finish();
+            }
+        });
+        ImageButton btnUser = findViewById(R.id.User);
+        btnUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainScreen.this, AccountProfile.class);
+                startActivity(it);
+                finish();
+            }
+        });
+    }
+}
+

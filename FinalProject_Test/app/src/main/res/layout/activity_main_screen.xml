@@ -38,3 +38,4 @@
         app:itemTextColor="@color/custom_color_bar"
         app:menu="@menu/menubar" />
 </RelativeLayout>
+
