@@ -168,7 +168,7 @@ public class        profile_fragment extends Fragment {
             }
         });
         dialog_phone.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
-        WindowManager.LayoutParams layoutParams = dialog_email.getWindow().getAttributes();
+        WindowManager.LayoutParams layoutParams = dialog_phone.getWindow().getAttributes();
         layoutParams.gravity = Gravity.CENTER;
         layoutParams.y = 10;
         dialog_phone.getWindow().setAttributes(layoutParams);
