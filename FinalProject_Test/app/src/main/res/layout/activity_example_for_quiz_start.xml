@@ -12,7 +12,7 @@
         android:id="@+id/txtChoiNgay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/baloo2_semibold"
         android:text="Thể thao"
         android:textColor="#FFFFFF"
@@ -27,7 +27,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
         android:contentDescription="Back button"
         android:scaleType="fitCenter"
@@ -172,16 +172,20 @@
         app:layout_constraintStart_toStartOf="parent"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/layoutEx1">
-        <ImageButton
-            android:id="@+id/imageBtnSave"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+
+
+        <CheckBox
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_bookmarks_cb"
+            android:button="@null"
             android:layout_gravity="top|end"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
-            android:background="#00FFFFFF"
-            android:scaleType="fitCenter"
-            app:srcCompat="@raw/icons8_save" />
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
 
         <ImageView
             android:id="@+id/imgRandom"
@@ -206,7 +210,7 @@
         android:id="@+id/layout_rd1"
         android:layout_width="356dp"
         android:layout_height="261dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="45dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -278,7 +282,7 @@
         android:id="@+id/layout_rd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="45dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -314,7 +318,7 @@
         android:id="@+id/txtDe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:text="Dễ"
         android:textColor="#FFFFFF"
