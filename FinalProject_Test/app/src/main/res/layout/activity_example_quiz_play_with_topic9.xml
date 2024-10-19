@@ -12,9 +12,9 @@
         android:id="@+id/txtChoiNgay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/baloo2_semibold"
-        android:text="Thể thao"
+        android:text="Chủ đề"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/txtDe"
@@ -27,7 +27,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="#00FFFFFF"
         android:contentDescription="Back button"
         android:scaleType="fitCenter"
@@ -52,7 +52,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
 
-            android:background="@drawable/socauhoi"
+            android:background="@drawable/chua_tra_loi"
             android:fontFamily="@font/baloo2_regular"
             android:text="1"
             android:textAllCaps="false"
@@ -141,7 +141,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="7dp"
-            android:background="@drawable/chua_tra_loi"
+            android:background="@drawable/socauhoi"
             android:fontFamily="@font/baloo2_regular"
             android:text="9"
             android:textAllCaps="false"
@@ -173,26 +173,22 @@
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/layoutEx1">
 
-
-        <CheckBox
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:background="@drawable/bg_bookmarks_cb"
-            android:button="@null"
+        <ImageButton
+            android:id="@+id/imageBtnSave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="top|end"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            />
-
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@raw/icons8_save" />
         <ImageView
             android:id="@+id/imgRandom"
             android:layout_width="417px"
             android:layout_height="413px"
-            android:layout_marginLeft="270px"
-            android:src="@raw/image_antony" />
+           android:layout_gravity="center"
+            android:src="@raw/imageplacehold" />
 
         <TextView
             android:id="@+id/txtCauhoi"
@@ -200,7 +196,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:text="Đây là cầu thủ nào ?"
+            android:text="Câu hỏi ở đây"
             android:textSize="20sp" />
 
 
@@ -210,7 +206,7 @@
         android:id="@+id/layout_rd1"
         android:layout_width="356dp"
         android:layout_height="261dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="50dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -228,7 +224,7 @@
             android:paddingTop="10dp"
             android:paddingEnd="17dp"
             android:paddingBottom="10dp"
-            android:text="A. Antony"
+            android:text="A. Đáp án A"
             android:textAllCaps="false"
             android:textSize="20sp" />
 
@@ -243,7 +239,7 @@
             android:paddingTop="10dp"
             android:paddingEnd="17dp"
             android:paddingBottom="10dp"
-            android:text="B. Le Cong Vinh"
+            android:text="B. Đáp án B"
             android:textAllCaps="false"
             android:textSize="20sp" />
 
@@ -258,7 +254,7 @@
             android:paddingTop="10dp"
             android:paddingEnd="17dp"
             android:paddingBottom="10dp"
-            android:text="C. M.Salah"
+            android:text="C. Đáp án C"
             android:textAllCaps="false"
             android:textSize="20sp" />
 
@@ -273,7 +269,7 @@
             android:paddingTop="10dp"
             android:paddingEnd="17dp"
             android:paddingBottom="10dp"
-            android:text="D. C.Ronaldo"
+            android:text="D. Đáp án D"
             android:textAllCaps="false"
             android:textSize="20sp" />
     </LinearLayout>
@@ -282,7 +278,7 @@
         android:id="@+id/layout_rd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -318,7 +314,7 @@
         android:id="@+id/txtDe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:text="Dễ"
         android:textColor="#FFFFFF"

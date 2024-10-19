@@ -7,12 +7,14 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class activity_choose_mode extends AppCompatActivity {
 ImageButton btnVeManHinhChinh;
+AppCompatButton cdde,cdbthg,cdkho;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +25,11 @@ ImageButton btnVeManHinhChinh;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        cdde =findViewById(R.id.CheDoDe);
+        cdbthg =findViewById(R.id.CheDoBinhThuong);
+        cdkho =findViewById(R.id.CheDoKho);
         btnVeManHinhChinh=(ImageButton) findViewById(R.id.TroVeManHinhChinh);
+
         btnVeManHinhChinh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,5 +37,28 @@ ImageButton btnVeManHinhChinh;
                 startActivity(intent);
             }
         });
+
+        cdde.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity_choose_mode.this, ExampleForQuizStart.class );
+                startActivity(intent);
+            }
+        });
+        cdbthg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity_choose_mode.this, ExampleForQuizStart.class );
+                startActivity(intent);
+            }
+        });
+        cdkho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity_choose_mode.this, ExampleForQuizStart.class );
+                startActivity(intent);
+            }
+        });
+
     }
 }

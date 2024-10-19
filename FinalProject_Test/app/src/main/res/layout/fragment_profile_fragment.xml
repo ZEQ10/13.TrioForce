@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@raw/bg"
-    tools:context=".login_activity">
+    tools:context="com.example.finalproject_test.screenfragment.profile_fragment">
 
     <ImageView
         android:id="@+id/imageView"

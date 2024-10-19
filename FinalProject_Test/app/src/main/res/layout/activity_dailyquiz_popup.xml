@@ -74,6 +74,7 @@
                 android:background="@drawable/btn_option_b"/>
 
             <androidx.appcompat.widget.AppCompatButton
+
                 android:id="@+id/DapAn_C"
                 android:layout_width="343dp"
                 android:layout_height="wrap_content"

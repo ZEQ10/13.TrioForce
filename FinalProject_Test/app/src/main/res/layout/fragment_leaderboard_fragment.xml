@@ -221,7 +221,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="372.571dp"
-        android:layout_height="535dp"
+        android:layout_height="wrap_content"
         app:cardBackgroundColor="#73F5F5F5"
         app:cardCornerRadius="7dp"
         app:cardElevation="0dp"
@@ -237,7 +237,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="#00000000"
             android:gravity="center_horizontal"
             android:orientation="vertical"
@@ -555,57 +555,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
 
-                android:layout_width="345.524dp"
-                android:layout_height="57.143dp"
-                android:layout_marginTop="9.524dp"
-                android:background="@drawable/border_bxh"
-                android:gravity="center_vertical"
-                android:padding="0dp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="16dp">
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="10dp"
-                    android:fontFamily="@font/baloo2_regular"
-                    android:text="10"
-                    android:textColor="#737373"
-                    android:textSize="10sp" />
-
-                <ImageButton
-                    android:layout_width="44dp"
-                    android:layout_height="44dp"
-                    android:background="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    android:src="@raw/useravatarbxh" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
-                    android:fontFamily="@font/baloo2_regular"
-                    android:text="Nguyễn Văn G"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:fontFamily="@font/baloo2_regular"
-                    android:text="3.000"
-                    android:textColor="#3EB8D4" />
-
-            </LinearLayout>
 
             <LinearLayout
 

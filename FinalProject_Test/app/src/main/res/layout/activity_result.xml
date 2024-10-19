@@ -58,31 +58,34 @@
             android:layout_marginTop="60dp"
             android:layout_gravity="center">
 
-            <ImageButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rs_home"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="@drawable/rs_home"
-               android:scaleType="fitCenter"
-                android:src="@raw/btntrangchu" />
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@raw/btntrangchu"
 
-            <ImageButton
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rs_replay"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/rs_replay"
-               android:scaleType="fitCenter"
-                android:src="@raw/btnchoilai" />
 
-            <ImageButton
+                android:background="@raw/btnchoilai"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rs_next"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/rs_next"
-                android:scaleType="fitCenter"
-                android:src="@raw/btntiep" />
+                android:background="@raw/btntiep"
+                android:layout_gravity="center"
+                />
         </LinearLayout>
     </LinearLayout>
 
